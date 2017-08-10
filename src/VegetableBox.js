@@ -34,8 +34,8 @@ class VegetableBox extends Component {
     console.log('mounting veggiebox props', this.props)
   }
 
-  componentDidUpdate(prevProps,prevState) {
-    if(prevProps !== prevState){
+  componentDidUpdate(prevProps, prevState) {
+    if(prevProps !== this.props){
       this.loadVegetablesFromServer();
     }
   }
